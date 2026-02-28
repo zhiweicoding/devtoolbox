@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AdUnit } from "@/app/components/AdUnit";
 
 type IndentType = "2" | "4" | "tab";
 
@@ -189,6 +190,11 @@ export default function XmlFormatterPage() {
         </div>
       </section>
 
+      {/* Ad after tool */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdUnit />
+      </div>
+
       {/* SEO Content */}
       <section className="bg-gray-50 border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-16">
@@ -244,6 +250,9 @@ export default function XmlFormatterPage() {
             </div>
           </div>
 
+          {/* Ad between XML vs JSON and FAQ */}
+          <AdUnit />
+
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-3">
@@ -260,6 +269,9 @@ export default function XmlFormatterPage() {
               ))}
             </div>
           </div>
+
+          {/* Ad after FAQ */}
+          <AdUnit />
         </div>
       </section>
     </div>

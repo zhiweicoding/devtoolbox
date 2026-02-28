@@ -3,6 +3,7 @@
 import { useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import { FORMAT_DEFS, boldMap, italicMap, applyMap, addCombining } from "./unicode-formats";
+import { AdUnit } from "@/app/components/AdUnit";
 
 // ─── Toast Component ───
 function Toast({ message }: { message: string | null }) {
@@ -363,6 +364,11 @@ export default function LinkedInFormatterPage() {
         </div>
       </section>
 
+      {/* Ad after format previews */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
+        <AdUnit />
+      </div>
+
       {/* SEO: How to use */}
       <section className="bg-gray-50 border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
@@ -399,6 +405,9 @@ export default function LinkedInFormatterPage() {
             </div>
           </div>
 
+          {/* Ad between How to use and FAQ */}
+          <AdUnit />
+
           {/* FAQ */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
@@ -421,6 +430,9 @@ export default function LinkedInFormatterPage() {
               ))}
             </div>
           </div>
+
+          {/* Ad after FAQ */}
+          <AdUnit />
 
           {/* More tools */}
           <div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { AdUnit } from "@/app/components/AdUnit";
 
 interface DecodedJWT {
   header: Record<string, unknown>;
@@ -255,6 +256,11 @@ export default function JWTDecoderPage() {
         )}
       </section>
 
+      {/* Ad after tool */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdUnit />
+      </div>
+
       {/* SEO Content */}
       <section className="bg-gray-50 border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-16">
@@ -287,6 +293,9 @@ export default function JWTDecoderPage() {
               </div>
             </div>
           </div>
+
+          {/* Ad between JWT Structure and Common Claims */}
+          <AdUnit />
 
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Common JWT Claims</h2>
@@ -328,6 +337,9 @@ export default function JWTDecoderPage() {
               ))}
             </div>
           </div>
+
+          {/* Ad after FAQ */}
+          <AdUnit />
         </div>
       </section>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useMemo } from "react";
+import { AdUnit } from "@/app/components/AdUnit";
 
 function parseCSV(text: string): string[][] {
   const rows: string[][] = [];
@@ -182,6 +183,11 @@ export default function CSVViewerPage() {
           )}
         </div>
       </section>
+
+      {/* Ad after tool */}
+      <div className="max-w-6xl mx-auto px-6">
+        <AdUnit />
+      </div>
 
       {/* SEO Content */}
       <section className="max-w-6xl mx-auto px-6 py-16 space-y-12">

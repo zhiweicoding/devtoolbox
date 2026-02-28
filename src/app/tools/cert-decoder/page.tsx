@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AdUnit } from "@/app/components/AdUnit";
 
 interface CertInfo {
   subject: string;
@@ -292,6 +293,11 @@ export default function CertDecoderPage() {
         </div>
       </section>
 
+      {/* Ad after tool */}
+      <div className="max-w-6xl mx-auto px-6">
+        <AdUnit />
+      </div>
+
       {/* SEO Content */}
       <section className="max-w-6xl mx-auto px-6 py-16 space-y-12">
         <div>
@@ -321,6 +327,9 @@ export default function CertDecoderPage() {
           </div>
         </div>
 
+        {/* Ad between Certificate Fields and FAQ */}
+        <AdUnit />
+
         {/* FAQ */}
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
@@ -337,6 +346,11 @@ export default function CertDecoderPage() {
           </div>
         </div>
       </section>
+
+      {/* Ad after FAQ */}
+      <div className="max-w-6xl mx-auto px-6">
+        <AdUnit />
+      </div>
 
       {/* Related Tools */}
       <section className="max-w-6xl mx-auto px-6 pb-16">

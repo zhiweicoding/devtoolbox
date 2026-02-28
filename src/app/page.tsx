@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AdUnit } from "@/app/components/AdUnit";
 
 const tools = [
   { name: "XML Formatter", href: "/tools/xml-formatter", icon: "bi-file-earmark-code", desc: "Format, beautify, and minify XML with syntax highlighting and line numbers." },
@@ -104,6 +105,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Ad after tools grid */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdUnit />
+      </div>
+
       {/* Why DevToolBox */}
       <section className="bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
@@ -163,6 +169,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Ad after FAQ */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdUnit />
+      </div>
 
       {/* CTA */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">

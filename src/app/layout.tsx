@@ -25,6 +25,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1099525389748059"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="bg-white text-gray-900 min-h-screen flex flex-col">
         <NavBar />
         <main className="flex-1">{children}</main>
